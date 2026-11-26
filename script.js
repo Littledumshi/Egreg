@@ -3,7 +3,7 @@ const fa=n=>String(n).replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
 let users=L('u')||[],posts=L('p')||[],bm=L('b')||{},ban=L('ban')||[],reps=L('reports')||[];
 let me,route='home',tgt,ex='',reg=false,open,edit=false,draft='';
-if(!users.some(u=>u.username==='admin'))users.push({username:'admin',password:'admin1234',name:'ادمین ایگرگ',bio:'مدیر ایگرگ',avatar:'',following:[],followers:[],isAdmin:true,verified:true,premium:false,joined:Date.now()});
+if(!users.some(u=>u.username==='admin'))users.push({username:'Egreg',password:'NNN1N7',name:'ادمین ایگرگ',bio:'مدیر ایگرگ',avatar:'',following:[],followers:[],isAdmin:true,verified:true,premium:false,joined:Date.now()});
 const save=()=>{S('u',users);S('p',posts);S('b',bm);S('ban',ban);S('reports',reps)};
 save();
 const U=n=>users.find(u=>u.username===n),max=()=>me.premium?1000:280;
